@@ -115,6 +115,86 @@ DEEPSEEK_API_KEY=your_deepseek_api_key_here
 
 詳細的硬體設置請參閱 [docs/HARDWARE.md](docs/HARDWARE.md) / For detailed hardware setup, see [docs/HARDWARE.md](docs/HARDWARE.md)
 
+## 🏗️ 架構說明 / Architecture Overview
+
+### 雙模型架構設計 / Dual-Model Architecture Design
+
+本專案採用創新的雙模型架構來實現高品質的中文新詩創作：
+
+This project adopts an innovative dual-model architecture to achieve high-quality Chinese poetry generation:
+
+```
+📸 照片 → 🤖 OpenAI GPT-4o → 📝 描述文字 → 🎭 DeepSeek → ✍️ 中文新詩
+Photo   → OpenAI GPT-4o    → Description → DeepSeek   → Chinese Poetry
+```
+
+#### 架構流程 / Architecture Flow
+
+1. **照片輸入 / Photo Input**: 用戶拍攝照片或上傳圖片
+2. **視覺分析 / Visual Analysis**: OpenAI GPT-4o 分析照片內容並生成詳細描述
+3. **文字傳遞 / Text Transfer**: 將描述文字傳遞給 DeepSeek API
+4. **詩歌生成 / Poetry Generation**: DeepSeek 根據描述生成中文新詩
+5. **輸出列印 / Output Printing**: 將生成的詩歌列印到熱敏紙上
+
+#### 為什麼選擇雙模型？/ Why Dual-Model Approach?
+
+**關於我為何使用雙模型的原因：**
+
+由於我的需求是產生中文的新詩，而 DeepSeek 在預訓練期間主要使用大量中文資料進行訓練，經過我的測試，DeepSeek 所編寫的新詩較符合我的需求。但是 DeepSeek 並不是視覺模型，所以選擇透過其他模型解析圖片內容，再轉拋給 DeepSeek。
+
+**About why I chose the dual-model approach:**
+
+Since my requirement is to generate Chinese poetry, and DeepSeek was primarily trained on large amounts of Chinese data during pre-training, through my testing, DeepSeek's generated poetry better meets my requirements. However, DeepSeek is not a visual model, so I chose to use another model to parse image content and then pass it to DeepSeek.
+
+### 模型優勢分析 / Model Advantages Analysis
+
+#### OpenAI GPT-4o 的視覺能力 / OpenAI GPT-4o Visual Capabilities
+- **強大的視覺理解**: 能夠準確識別照片中的物體、場景、情感和細節
+- **豐富的描述能力**: 生成詳細、生動的中文描述文字
+- **多語言支援**: 支援多種語言的視覺分析
+
+#### DeepSeek 的中文詩歌優勢 / DeepSeek Chinese Poetry Advantages
+- **中文預訓練**: 在大量中文文學作品上進行預訓練
+- **詩歌風格**: 更符合中文詩歌的韻律和意境
+- **文化理解**: 對中國文化和詩歌傳統有深入理解
+- **創作品質**: 生成的詩歌更具文學性和藝術性
+
+### 技術實現細節 / Technical Implementation Details
+
+#### API 整合 / API Integration
+```python
+# 1. OpenAI 視覺分析 / OpenAI Visual Analysis
+def analyze_image_with_openai(image_path):
+    """使用 OpenAI GPT-4o 分析圖片內容"""
+    # 將圖片轉換為 base64 編碼
+    # 調用 OpenAI API 進行視覺分析
+    # 返回詳細的中文描述
+
+# 2. DeepSeek 詩歌生成 / DeepSeek Poetry Generation  
+def generate_poetry_with_deepseek(description):
+    """使用 DeepSeek 根據描述生成中文詩歌"""
+    # 構建詩歌生成提示詞
+    # 調用 DeepSeek API 生成詩歌
+    # 返回格式化的中文詩歌
+```
+
+#### 錯誤處理與重試機制 / Error Handling and Retry Mechanism
+- **API 重試**: 自動重試失敗的 API 調用
+- **降級方案**: 當某個 API 不可用時的備用方案
+- **錯誤日誌**: 詳細記錄錯誤信息便於調試
+
+### 性能優化 / Performance Optimization
+
+#### 並行處理 / Parallel Processing
+- **異步 API 調用**: 減少等待時間
+- **緩存機制**: 避免重複的 API 調用
+- **批量處理**: 提高處理效率
+
+#### 成本控制 / Cost Control
+- **智能提示詞**: 優化 API 調用次數
+- **結果緩存**: 避免重複生成相同內容
+- **使用監控**: 實時監控 API 使用量
+
 ## 🎮 使用方式 / Usage
 
 ### 手勢控制 / Gesture Control
