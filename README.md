@@ -19,7 +19,6 @@ A Raspberry Pi-based AI poetry camera that combines gesture recognition, image a
 - 🛡️ **智能容錯 / Intelligent Fault Tolerance**: 相機、網路、API 的多重備用方案 / Multiple backup solutions for camera, network, and API
 - 🎨 **實時預覽 / Real-time Preview**: LCD 螢幕即時顯示相機畫面和手勢信心度 / LCD screen displays camera feed and gesture confidence in real-time
 
-
 ## 🚀 快速開始 / Quick Start
 
 ### 系統需求 / System Requirements
@@ -408,6 +407,7 @@ This project is inspired by and extends from poetry-camera-rpi. For the original
 - [環境測試報告](ENVIRONMENT.md) / [Environment Test Report](ENVIRONMENT.md)
 - [安裝依賴腳本](install_dependencies.sh) / [Installation Dependencies Script](install_dependencies.sh)
 
----
+--![image](https://github.com/user-attachments/assets/2aafbcc4-4a5c-477c-a96e-1cba78aa771e)
+-
 
 ⭐ 如果這個專案對您有幫助，請給我們一個星標！/ If this project helps you, please give us a star! ⭐
