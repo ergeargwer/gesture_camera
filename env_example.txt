@@ -1,0 +1,49 @@
+# Poetry Camera 環境變數配置範例 / Poetry Camera Environment Variables Configuration Example
+# 複製此文件為 .env 並填入您的實際 API 金鑰 / Copy this file to .env and fill in your actual API keys
+
+# OpenAI API 設置 / OpenAI API Settings
+# 用於圖像分析和內容描述 / For image analysis and content description
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-4o-mini
+
+# DeepSeek API 設置 / DeepSeek API Settings
+# 用於生成中文詩歌 / For generating Chinese poetry
+DEEPSEEK_API_KEY=your_deepseek_api_key_here
+DEEPSEEK_MODEL=deepseek-chat
+
+# 相機設置 / Camera Settings
+CAMERA_INDEX=0
+FRAME_WIDTH=800
+FRAME_HEIGHT=600
+
+# GPIO 設置 / GPIO Settings
+BUTTON_PIN=16
+LED_PIN=13
+BUZZER_PIN=5
+
+# 印表機設置 / Printer Settings
+PRINTER_DEV=/dev/usblp0
+PRINTER_WIDTH=58
+PRINTER_ENCODING=GB18030
+
+# 手勢識別設置 / Gesture Recognition Settings
+GESTURE_CONFIDENCE_THRESHOLD=95.0
+GESTURE_DETECTION_FRAMES=3
+
+# API 重試設置 / API Retry Settings
+API_RETRIES=3
+API_RETRY_DELAY=2
+
+# 日誌設置 / Logging Settings
+LOG_LEVEL=INFO
+DEBUG=False
+
+# 注意事項 / Notes:
+# 1. 請將 your_openai_api_key_here 替換為您的 OpenAI API 金鑰
+#    Please replace your_openai_api_key_here with your OpenAI API key
+# 2. 請將 your_deepseek_api_key_here 替換為您的 DeepSeek API 金鑰
+#    Please replace your_deepseek_api_key_here with your DeepSeek API key
+# 3. 確保此文件不會被提交到版本控制系統中
+#    Ensure this file is not committed to version control
+# 4. 在生產環境中，請使用更安全的金鑰管理方式
+#    In production environment, please use more secure key management methods 

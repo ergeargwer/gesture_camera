@@ -1,0 +1,15 @@
+opencv-python==4.11.0.86
+opencv-contrib-python==4.11.0.86
+numpy==1.26.4
+pygame==2.1.2
+Pillow==9.4.0
+python-dotenv==0.21.0
+openai==1.82.1
+requests==2.28.1
+mediapipe==0.10.18
+RPi.GPIO==0.7.1
+python-escpos==3.1
+pyusb==1.3.1
+tflite-runtime==2.14.0
+tensorflow==2.19.0
+picamera2==0.3.28
