@@ -398,9 +398,9 @@ This project is inspired by and extends from poetry-camera-rpi. For the original
 
 ## 📞 聯絡方式 / Contact
 
-- 專案主頁 / Project Homepage: [GitHub Repository](https://github.com/YOUR_USERNAME/poetry-camera)
-- 問題回報 / Issue Report: [GitHub Issues](https://github.com/YOUR_USERNAME/poetry-camera/issues)
-- 電子郵件 / Email: your.email@example.com
+- 專案主頁 / Project Homepage: [GitHub Repository](https://github.com/ergeargwer/gesture_camera)
+- 問題回報 / Issue Report: [GitHub Issues](https://github.com/ergeargwer/gesture_camera/issues)
+- 電子郵件 / Email: peter0910@gmail.com
 
 ## 📚 相關文檔 / Related Documentation
 
