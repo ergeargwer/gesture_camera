@@ -407,7 +407,8 @@ This project is inspired by and extends from poetry-camera-rpi. For the original
 - [環境測試報告](ENVIRONMENT.md) / [Environment Test Report](ENVIRONMENT.md)
 - [安裝依賴腳本](install_dependencies.sh) / [Installation Dependencies Script](install_dependencies.sh)
 
---![image](https://github.com/user-attachments/assets/2aafbcc4-4a5c-477c-a96e-1cba78aa771e)
+![image](https://github.com/user-attachments/assets/5628465a-00bc-440e-b7c1-0cbd60c2380b)
+
 -
 
 ⭐ 如果這個專案對您有幫助，請給我們一個星標！/ If this project helps you, please give us a star! ⭐
