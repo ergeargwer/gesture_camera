@@ -409,6 +409,7 @@ This project is inspired by and extends from poetry-camera-rpi. For the original
 
 ![image](https://github.com/user-attachments/assets/5628465a-00bc-440e-b7c1-0cbd60c2380b)
 
--
+-https://youtu.be/R8WCF3kJ_Rg
+
 
 ⭐ 如果這個專案對您有幫助，請給我們一個星標！/ If this project helps you, please give us a star! ⭐
